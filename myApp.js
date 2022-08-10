@@ -3,7 +3,9 @@ const helmet = require('helmet');
 
 const app = express();
 
-let ninetyDaysInSeconds = 90*24*60*60;
+const ninetyDaysInSeconds = 90*24*60*60;
+
+let timeInSeconds = ninetyDaysInSeconds;
 
 app.use(helmet());
 
